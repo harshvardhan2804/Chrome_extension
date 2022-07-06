@@ -1,6 +1,6 @@
-import { getActiveTabURL } from "./utils.js";
+  import { getActiveTabURL } from "./utils.js";
 
-const addNewBookmark = (bookmarks, bookmark) => {
+  const addNewBookmark = (bookmarks, bookmark) => {
   const bookmarkTitleElement = document.createElement("div");
   const controlsElement = document.createElement("div");
   const newBookmarkElement = document.createElement("div");
@@ -70,6 +70,7 @@ const setBookmarkAttributes =  (src, eventListener, controlParentElement) => {
   controlElement.addEventListener("click", eventListener);
   controlParentElement.appendChild(controlElement);
 };
+
 
 document.addEventListener("DOMContentLoaded", async () => {
   const activeTab = await getActiveTabURL();
